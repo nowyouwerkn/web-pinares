@@ -3,14 +3,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="wide text-alt-color">Habla con Nosotros</p>
-                    <p class="h2 mb-3">Estamos para ayudarte</p>
-                    <p class="mb-0">Tu tranquilidad es nuestra prioridad ¡Contáctanos!</p>
+                    <p class="wide text-alt-color wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Habla con Nosotros</p>
+                    <p class="h2 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">Estamos para ayudarte</p>
+                    <p class="mb-0 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">Tu tranquilidad es nuestra prioridad ¡Contáctanos!</p>
                 </div>
 
                 <div class="col-md-6">
                     <div class="d-flex justify-content-end">
-                        <div class="text-end">
+                        <div class="text-end wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <p class="display-3"><a class="text-white" href="https://api.whatsapp.com/send?phone=+5214771767373&text=Me interesa el desarrollo.">(477) 176 73 73</a></p>
                             <p class="small mb-0">Llámanos ahora o mándanos un Whatsapp</p>
                         </div>
@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-md-5 position-relative">
-                        <div class="card card-body card-terms">
+                        <div class="card card-body card-terms wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <h5 class="h5">Términos y Condiciones</h5>
 
                             <p><span class="counter">1</span> El precio aquí establecido corresponde a las operaciones de contado en Moneda Nacional de los Estados Unidos Mexicanos más los impuestos correspondientes. El precio puede cambiar conforme a los gastos notariales. Para conocer los precios de acuerdo con los diferentes tipos de crédito acudir con los promotores autorizados de Grupo GUIAR </p>
@@ -41,21 +41,21 @@
                     </div>
                     <div class="col-md-7">
                         <div class="d-flex justify-content-end">
-                            <img src="img/footer-logo.png" alt="" height="40px">
+                            <img src="img/footer-logo.png" alt="" height="40px" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                         </div>
                     </div>
                 </div>
 
                 <div class="row footer-menu">
                     <div class="col-md-5">
-                        <ul class="social-links list-inline mb-0">
+                        <ul class="social-links list-inline mb-0 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                             <li class="list-inline-item"><a href="https://www.facebook.com/loscastillosguiar?mibextid=LQQJ4d" target="_blank"><i class='bx bxl-facebook bx-sm'></i></a></li>
                             <li class="list-inline-item"><a href="https://www.instagram.com/jardindelasorquideas?igsh=MTNqN2RrMG93anN6Mw==" target="_blank"><i class='bx bxl-instagram bx-sm'></i></a></li>
                         </ul>
                     </div>
                     <div class="col-md-7">
                         <div class="d-flex justify-content-end">
-                            <ul class="list-inline mb-0">
+                            <ul class="list-inline mb-0 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
                                 <li class="list-inline-item me-3"><a href="privacy.php">Aviso de Privacidad</a></li>
                                 <li class="list-inline-item me-3"><a href="terms.php">Términos y Condiciones</a></li>
                                 <li class="list-inline-item"><a href="https://grupoguiar.com.mx/" target="_blank">Conoce Grupo Guiar</a></li>
@@ -68,11 +68,11 @@
 
                 <div class="row footer-copyright">
                     <div class="col-md-6">
-                        <p class="mb-0"><small>Grupo Guiar 2024 © Constructora Reyes Reyes S.A de C.V | Promotora leonesa S.A de C.V</small></p>
+                        <p class="mb-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s"><small>Grupo Guiar 2024 © Constructora Reyes Reyes S.A de C.V | Promotora leonesa S.A de C.V</small></p>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex justify-content-end">
-                            <p class="mb-0"><small>Un desarrollo de: Grupo Guiar</small></p>
+                            <p class="mb-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"><small>Un desarrollo de: Grupo Guiar</small></p>
                         </div>
                     </div>
                 </div>
@@ -104,6 +104,11 @@
 
     <script src="js/vendor/owl-carousel/dist/owl.carousel.min.js"></script>
 
+    <script src="libs/wowjs/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
     <script>
         $('.amenities-carousel').owlCarousel({
             loop:true,
