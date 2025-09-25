@@ -771,7 +771,6 @@ section .container{
 
 
 /* Modelo Section */
-
 .model-section{
     position: relative;
 }
@@ -821,6 +820,42 @@ section .container{
     right: 50px;
     bottom: 50px;
     margin: 0px;
+}
+
+/* Plano */
+.tab-content{
+    position: relative;
+    z-index: 2;
+    background-color: var(--light);
+    padding: 60px 50px;
+    min-height: 420px;
+    color: var(--main);
+    border-radius: 0px 20px 20px 20px;
+}
+
+.nav-tabs{
+    border-bottom: none;
+    background-color: transparent;
+    justify-content: start;
+    gap: 15px;
+}
+
+.nav-tabs .nav-link{
+    border: none;
+    background-color: transparent;
+    color: var(--main);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 20px 20px 0px 0px;
+    transition: .2s ease-in-out all;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: var(--light);
+    color: var(--main);
 }
 
 /* Amenidades */
