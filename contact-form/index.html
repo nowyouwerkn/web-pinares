@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="flex">
+        
+    
+    <div class="col">
+
+        <h3>Haz una Pre-Compra</h3>
+
+        <form action="" id="form_preorder">
+            <label for="email_preorder">Email:</label>
+            <input type="text" name="email_preorder" id="email_preorder" placeholder="email@example.com"><br>
+            <label for="subject_preorder">Subject:</label>
+            <input type="text" name="subject_preorder" id="subject_preorder" placeholder="subject"><br>
+            <label for="message_preorder">Message:</label>
+            <textarea name="message_preorder" id="message_preorder" placeholder="message"></textarea><br>
+            <button name="submit" id="submit_preorder">Send</button>
+            <label id="info_preorder"></label>
+        </form>
+    </div>
+    <div class="col">
+        <h3>Deja tu Newsletter</h3>
+
+        <form action="" id="form_newsletter">
+            <label for="email_newsletter">Email:</label>
+            <input type="text" name="email_newsletter" id="email_newsletter" placeholder="email@example.com"><br>
+
+            <button name="submit" id="submit_newsletter">Send</button>
+            <label id="info_newsletter"></label>
+        </form>
+
+    </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="mail.js"></script>
+</body>
+</html>

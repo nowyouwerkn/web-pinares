@@ -1,0 +1,29 @@
+label {
+  display: block;
+}
+
+input, textarea {
+  margin: 5px 0;
+  border: 1px solid #CCC;
+}
+
+p {
+}
+
+.flex{
+    display: flex;
+}
+
+.col{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.col{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}

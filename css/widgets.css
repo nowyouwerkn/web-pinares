@@ -1,0 +1,52 @@
+.floatingContactBtn{
+    display: none;
+    width: 70px;
+    height: 70px;
+    background-color: var(--main);
+    color: var(--white);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    text-decoration: none;
+    border-radius: 20px 20px 0px 20px;
+    text-align: center;
+    line-height: 87px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+
+.btn-whatsapp{
+    border-radius: 10px;
+    background: #1ACC60;
+    text-align: center;
+    color: var(--white);
+    display: inline-block;
+    padding: 18px 20px;
+}
+
+.floating-whatsapp{
+    display: block;
+    background-color: #25D366;
+    bottom: 30px;
+    right: 30px;
+    left: initial;
+}
+
+.floatingContactBtn i::before{
+    font-size: 2em;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .floatingContactBtn{
+        display: block;
+    }
+
+    .floating-whatsapp{
+        display: block;
+        background-color: #25D366;
+        bottom: 100px;
+        left: 20px;
+        right: initial;
+    }
+}
