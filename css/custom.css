@@ -1443,7 +1443,8 @@ body.toggled .sidebar-overlay{
     }
     
     .page-start .building {
-        margin-top: 75%;
+        margin-top: 80%;
+        height: 120vh;
     }
     
     .detail-image {
@@ -1478,6 +1479,18 @@ body.toggled .sidebar-overlay{
         top: auto;
         margin: 30px auto;
         display: block;
+    }
+
+    .financing-section .btn-secondary{
+        margin-bottom: 40px;
+        width: 120px !important;
+        height: 120px !important;
+        margin-left: 20px;
+    }
+
+    .financing-section .btn-secondary::before{
+        width: 150px !important;
+        height: 150px !important;
     }
     
     .amenities-carousel .item {
