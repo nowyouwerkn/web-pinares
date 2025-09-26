@@ -24,7 +24,7 @@ body {
 	background-color: var(--white);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 	position: relative;
     font-size: 14px;
 }
@@ -298,7 +298,7 @@ a:hover {
 
 
 .logo{
-	background: url("../img/logo.svg");
+	background: url("../img/main-logo.png");
 	background-position: center center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -306,7 +306,7 @@ a:hover {
 	height: 170px;
 	position: relative;
 	display: inline-block;
-	top: 32px;
+	top: 20px;
 	margin-bottom: 0px;
 }
 
@@ -1179,12 +1179,13 @@ footer hr{
 }
 
 .responsive-nav .btn-menu i {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 50px;
+    color: var(--light);
 }
 
 .responsive-nav .logo {
-    width: 115px;
+    width: 120px;
     margin-top: 0px;
     height: 132px;
     float: left;
@@ -1327,6 +1328,10 @@ body.toggled .sidebar-overlay{
     text-align: center;
 }
 
+.close-btn i{
+    color: var(--light);
+}
+
 .hide-res{
     display: block;
 }
@@ -1401,6 +1406,11 @@ body.toggled .sidebar-overlay{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .std-p {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -1433,11 +1443,11 @@ body.toggled .sidebar-overlay{
     }
     
     .page-start .building {
-        margin-top: 20%;
+        margin-top: 75%;
     }
     
     .detail-image {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 350px;
         margin: 30px 0px;
@@ -1494,6 +1504,50 @@ body.toggled .sidebar-overlay{
     .cta-image-wrapper {
         height: 60vh;
         margin-bottom: 30px;
+    }
+
+    .development-list .ps-5{
+        padding-left: 0px !important;
+    }
+
+    .development-list-data{
+        margin-top: 50px;
+    }
+
+    .development-list small{
+        text-align: center;
+        display: block;
+    }
+
+    .tour-section .ps-5{
+        padding-left: 0px !important;
+    }
+
+    .tour-section{
+        text-align: center;
+    }
+
+    .stats-container{
+        position: relative;
+        display: none !important;
+    }
+
+    .social-container{
+        position: relative !important;
+        margin-top: 30px;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        padding-bottom: 30px;
+    }
+
+    .page-start .stats-container{
+        bottom: 0px;
+    }
+
+    .stats-container  .col-md-3{
+        display: flex !important;
+        gap: 30px;
     }
 }
 
@@ -1791,7 +1845,7 @@ body.toggled .sidebar-overlay{
     }
     
     .credits-marquee-item img {
-        max-height: 40px;
+        max-height: 160px;
     }
 
     /* Footer */
@@ -1874,6 +1928,16 @@ body.toggled .sidebar-overlay{
         padding: 10px 0px;
     }
 
+    .pre-footer{
+        text-align: center;
+    }
+
+    .pre-footer .justify-content-end{
+        justify-content: center !important;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
     /* Elementos generales */
     .text-end{
         text-align: center !important;
@@ -1908,6 +1972,11 @@ body.toggled .sidebar-overlay{
         height: auto;
         min-height: 200px;
     }
+
+    .card-terms p.text-muted{
+        text-align: center;
+    }
+   
 }
 
 /* Extra Small Devices, Phones */
@@ -1980,12 +2049,13 @@ body.toggled .sidebar-overlay{
     .gradient-card {
         padding: 30px 20px;
         border-radius: 25px;
+        padding-bottom: 80%;
     }
 
     .gradient-card .price-bubble {
         height: 70px;
         width: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .price-bubble .h5 {
@@ -2012,6 +2082,18 @@ body.toggled .sidebar-overlay{
         height: 130px;
         border-width: 2px;
     }
+
+    .price-bubble::before{
+        width: 90px;
+        height: 90px;
+    }
+
+    .btn-menu::before{
+        width: 60px;
+        height: 60px;
+        border-color: var(--main);
+    }
+
 
     .btn i {
         font-size: 1.5em;
@@ -2092,7 +2174,7 @@ body.toggled .sidebar-overlay{
     }
     
     .credits-marquee-item img {
-        max-height: 35px;
+        max-height: 160px;
     }
 
     /* Footer compacto */
@@ -2102,9 +2184,14 @@ body.toggled .sidebar-overlay{
     }
 
     .pre-footer .separator {
-        bottom: -15vw;
+        bottom: -9vw;
         height: 30vw;
         max-height: 120px;
+        width: 103% !important;
+    }
+
+    .footer-image-wrapper .separator{
+        width: 104% !important;
     }
 
     .footer-image-wrapper {
@@ -2223,6 +2310,6 @@ body.toggled .sidebar-overlay{
     }
     
     .credits-marquee-item img {
-        max-height: 50px;
+        max-height: 160px;
     }
 }
