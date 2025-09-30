@@ -485,7 +485,7 @@ nav{
 
 .page-start .social-container{
     position: absolute;
-    bottom: 40%;
+    bottom: 52%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 10;
@@ -1703,6 +1703,11 @@ body.toggled .sidebar-overlay{
     .page-start .gradient-container,
     .page-start .stats-container {
         transition: none !important;
+    }
+
+    .tour-section .btn-primary{
+        padding: 18px 5px !important;
+        font-size: 8.5px;
     }
 
     /* Stats cards */
