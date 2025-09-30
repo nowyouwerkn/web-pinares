@@ -410,7 +410,7 @@ nav{
 /* Page Start */
 .page-start{
     padding-top: 60px;
-    padding-bottom: 5%;
+    padding-bottom: 0px;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -432,8 +432,6 @@ nav{
     z-index: 10;
     transition: transform 0.1s ease-out;
 }
-
-
 
 .page-start .sky{
     background: url("../img/page-start/sky.png");
@@ -458,10 +456,10 @@ nav{
     height: 100vh;
     width: 102%;
     position: absolute;
-    top: -5%;
+    top: 0%;
     left: -10px;
     z-index: 3;
-    margin-top: 15%;
+    margin-top: 5%;
     transition: transform 0.1s ease-out;
     will-change: transform;
 }
@@ -487,7 +485,7 @@ nav{
 
 .page-start .social-container{
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 10;
@@ -497,7 +495,15 @@ nav{
 
 .page-start .social-links a i{
     color: var(--white);
-    font-size: 30px;
+    font-size: 60px;
+}
+
+.social-links .wide{
+    color: var(--white) !important;
+}
+
+.page-start .h2{
+    font-size: 35px;
 }
 
 /* Cursor personalizado para el efecto parallax */
@@ -608,7 +614,7 @@ nav{
 
 
 .stats-card .stats-card-body{
-    background-color: rgba(255, 243, 216, 0.4);
+    background-color: rgba(255, 243, 216, 0.8);
     border: 2px solid var(--white);
     border-top: none;
     color: var(--main);
@@ -730,13 +736,23 @@ section .container{
     width: 70% !important;
 }
 
-
-.stats-card-wrap{
+.stats-card-right{
     position: absolute;
     width: 35%;
     top: 30px;
-    left: 30px;
+    right: 0px;
     z-index: 4;
+    transform: scale(.8);
+}
+
+.stats-card-bottom{
+    position: absolute;
+    width: 35%;
+    bottom: 30px;
+    left: 00px;
+    transform: translateX(-50%);
+    z-index: 4;
+    transform: scale(.8);
 }
 
 /* Tour Section */
@@ -1124,6 +1140,12 @@ footer hr{
 .footer-menu{
     padding: 30px 0px;
     margin-top: 30px;
+}
+
+.footer-menu .social-links a i{
+    color: var(--white);
+    font-size: 30px;
+    transition: .2s ease-in-out all;
 }
 
 .footer-copyright{
@@ -2080,7 +2102,9 @@ body.toggled .sidebar-overlay{
         height: 30vw;
         min-height: 60px;
         max-height: 120px;
+        width: 105% !important;
     }
+    
 
     /* Botones más pequeños */
     .btn {
