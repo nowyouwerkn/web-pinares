@@ -111,6 +111,25 @@
     <script>
         new WOW().init();
     </script>
+
+    <!-- Auto-abrir modal Coming Soon al cargar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modalEl = document.getElementById('comingSoonModal');
+            if (modalEl && window.bootstrap && bootstrap.Modal) {
+                var modalInstance = new bootstrap.Modal(modalEl, { backdrop: 'static', keyboard: false });
+                modalInstance.show();
+            } else if (modalEl) {
+                // Fallback simple si Bootstrap no está disponible
+                modalEl.classList.add('show');
+                modalEl.style.display = 'block';
+                document.body.classList.add('modal-open');
+                var backdrop = document.createElement('div');
+                backdrop.className = 'modal-backdrop fade show';
+                document.body.appendChild(backdrop);
+            }
+        });
+    </script>
     
     <script>
         $('.amenities-carousel').owlCarousel({

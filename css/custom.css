@@ -402,6 +402,103 @@ nav{
     z-index: 10;
 }
 
+/* ======================================
+   Modal Coming Soon (bloquea scroll)
+   ====================================== */
+.modal-comingsoon .modal-dialog {
+    max-width: 960px;
+}
+
+.modal-comingsoon .modal-content {
+    border: none;
+    border-radius: 20px;
+    overflow: visible; /* permitir que el logo salga por arriba */
+    background: #000;
+}
+
+.modal-comingsoon .modal-body { padding: 0; }
+
+.modal-comingsoon .modal-hero {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    overflow: hidden; /* que el video respete el borde redondeado */
+    border-radius: 20px;
+}
+
+.modal-comingsoon .modal-hero .bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-comingsoon .modal-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.6) 60%, rgba(0,0,0,.75) 100%);
+}
+
+.modal-comingsoon .modal-hero .hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 24px;
+    text-align: center;
+    z-index: 2;
+}
+
+.modal-comingsoon .modal-hero .hero-content h4 {
+    font-weight: bold;
+}
+
+/* Botón rectangular dentro del modal (no circular) */
+.modal-comingsoon .btn {
+    width: auto;
+    height: auto;
+    padding: 12px 22px;
+    border-radius: .5rem;
+}
+.modal-comingsoon .btn i { display: inline-block; margin: 0 8px 0 0; font-size: 1.25em; }
+.modal-comingsoon .btn::before { display: none; }
+
+/* Esfera del logo flotante sobresaliendo del modal */
+.modal-comingsoon .modal-logo-float {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 0; /* contenedor solo para posicionamiento */
+    z-index: 3;
+    pointer-events: none; /* que no interfiera con clics del modal */
+}
+
+/* Ajustes del bloque guiar dentro del modal para que no muestre la barra */
+.modal-comingsoon .guiar-btn {
+    background: transparent;
+    box-shadow: none;
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+.modal-comingsoon .guiar-btn .guiar {
+    pointer-events: auto; /* permitir clic al link */
+}
+
+@media (max-width: 576px) {
+    .modal-comingsoon .modal-dialog { margin: 1rem; }
+    .modal-comingsoon .modal-hero { min-height: 360px; }
+}
+
+.modal-backdrop{
+    opacity: .8 !important;
+}
+
 /* General Styles */
 .card{
     border: none;
